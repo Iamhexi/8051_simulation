@@ -1,0 +1,16 @@
+Registers:
+Hexcode; Register
+00 A
+01 @R0
+02 @R1
+03 R0
+04 R1
+05 R2
+06 R3
+07 R4
+08 R5
+09 R6
+0A R7
+0B @DPTR
+0C DPTR
+0D B

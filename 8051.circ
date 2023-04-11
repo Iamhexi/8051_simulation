@@ -77,9 +77,11 @@
     <comp lib="0" loc="(780,340)" name="Constant"/>
     <comp lib="4" loc="(250,320)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="ALU_buffer1"/>
     </comp>
     <comp lib="4" loc="(270,420)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="ALU_buffer2"/>
     </comp>
     <comp lib="4" loc="(660,150)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
@@ -905,5 +907,83 @@
     <wire from="(910,990)" to="(910,1160)"/>
     <wire from="(930,950)" to="(930,960)"/>
     <wire from="(930,950)" to="(940,950)"/>
+  </circuit>
+  <circuit name="InstructionDecoder">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="InstructionDecoder"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1080,210)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Data"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1080,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="MemoryRead"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1080,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="MemoryWrite"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1080,300)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="MemoryEnable"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1080,330)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="RegisterLoad"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1080,360)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="RegisterStore"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1080,390)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="RegisterTransfer"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1080,420)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="IncrementPC"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(210,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="InstructionLine"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(220,240)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+      <a name="facing" val="south"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="8" loc="(273,341)" name="Text">
+      <a name="text" val="Operand"/>
+    </comp>
+    <comp lib="8" loc="(330,249)" name="Text">
+      <a name="text" val="Operation code"/>
+    </comp>
+    <wire from="(210,240)" to="(220,240)"/>
+    <wire from="(230,260)" to="(230,370)"/>
+    <wire from="(240,260)" to="(380,260)"/>
   </circuit>
 </project>

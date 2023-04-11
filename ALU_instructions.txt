@@ -1,0 +1,12 @@
+0000 - increment, flags: none
+0001 - decrement, flags: none
+0010 - add, flags: carry (C), auxiliary carry (AC), overflow (OV)
+0011 - add with carry, flags: carry (C), auxiliary carry (AC), overflow (OV)
+0100 - subb, flags: carry (C), auxiliary carry (AC), overflow (OV)
+0101 - multiply, flags: carry (C), overflow (OV)
+0110 - divide, flags: carry (C),  overflow (OV)
+0111 - logical OR, affects carry only if carry is one of the operands 
+1000 - logical AND, affects carry only if carry is one of the operands
+1001 - logical XOR, flags: non
+1010 - comparison, affects ONLY flags: carry (C), zero (Z), sign (S)
+1111 - no operation, flags: none

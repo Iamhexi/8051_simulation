@@ -1,16 +1,20 @@
 Registers:
-Hexcode; Register
-00 A
-01 @R0
-02 @R1
-03 R0
-04 R1
-05 R2
-06 R3
-07 R4
-08 R5
-09 R6
-0A R7
-0B @DPTR
-0C DPTR
-0D B
+Address; Register
+0 ALU_Buffer1 (input only)
+1 ALU_Buffer2 (input only)
+2 A
+3 B
+4 ALU_Output (output only)
+
+
+
+6 @R0
+7 @R1
+8 R0
+9 R1
+A R2
+B R3
+C R4
+D R5
+E R6
+F R7

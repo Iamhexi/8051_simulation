@@ -9,4 +9,12 @@
 1000 - logical AND, affects carry only if carry is one of the operands
 1001 - logical XOR, flags: non
 1010 - comparison, affects ONLY flags: carry (C), zero (Z), sign (S)
+
+1011 - rotate right wihtout carry (RR), flags: none
+1100 - rotate right with carry (RRC), flags: carry
+1101 - rotate left without carry (RL), flags: none
+1110 - rotate left with carryl (RLC), flags: carry
+
+
+
 1111 - no operation, flags: none

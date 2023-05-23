@@ -1,0 +1,13 @@
+# Logisim PLA program table
+00000011 1011 # rr
+00010011 1100 # rrc
+00100011 1101 # rl
+00110011 1110 # rlc
+0000x1xx 0000 # inc
+0001x1xx 0001 # dec
+0010x1xx 0010 # add
+0011x1xx 0011 # addc
+0100xx10 0111 # orl
+0101xx1x 1000 # anl
+1001x1xx 0100 # subb
+11011xxx 1010 # compare (djnz)

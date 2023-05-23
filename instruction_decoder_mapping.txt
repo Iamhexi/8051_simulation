@@ -5,7 +5,7 @@ Address; Register
 2 A
 3 B
 4 ALU_Output (output only)
-
+5 ALU_OutputAux (output only)
 
 
 6 @R0
@@ -18,3 +18,8 @@ C R4
 D R5
 E R6
 F R7
+
+10 Source Register
+11 Opcode lower Nibble (output only)
+12 Instruction Register
+13 Program Counter

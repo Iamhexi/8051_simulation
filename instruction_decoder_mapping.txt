@@ -21,5 +21,5 @@ F R7
 
 10 Source Register
 11 Opcode lower Nibble (output only)
-12 Instruction Register
-13 Program Counter (16-bit)
+12 Instruction Register (output only)
+13 Program Counter

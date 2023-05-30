@@ -100,7 +100,7 @@
       <a name="addrWidth" val="4"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 4 24
-ac 800000 212000 413000 1 800001
+0 1bc 0 800000 212000 413000 1 800001
 </a>
       <a name="dataWidth" val="24"/>
     </comp>
@@ -128,7 +128,7 @@ ac 800000 212000 413000 1 800001
       <a name="addrWidth" val="4"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 4 24
-28c 800000 212000 413000 1 800001
+0 39c 0 800000 212000 413000 1 800001
 </a>
       <a name="dataWidth" val="24"/>
     </comp>
@@ -271,7 +271,8 @@ ac 800000 212000 413000 1 800001
       <a name="addrWidth" val="4"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 4 24
-800000 20c000 401000 202000 400000 204000 402000 800001
+0 800000 212000 401000 202000 400000 40000 204000
+402000 800001
 </a>
       <a name="dataWidth" val="24"/>
     </comp>
@@ -299,8 +300,122 @@ ac 800000 212000 413000 1 800001
       <a name="addrWidth" val="4"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 4 24
-211000 410000 202000 403000 210800 402000 203000 410800
+0 211000 410000 202000 403000 210800 402000 203000
+410800 800001
+</a>
+      <a name="dataWidth" val="24"/>
+    </comp>
+    <wire from="(310,180)" to="(350,180)"/>
+    <wire from="(590,230)" to="(660,230)"/>
+  </circuit>
+  <circuit name="MOV_reg_to_acc">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="MOV_reg_to_acc"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(310,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ADDRESS"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(660,230)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="CODED_OUTPUT"/>
+      <a name="output" val="true"/>
+      <a name="width" val="24"/>
+    </comp>
+    <comp lib="4" loc="(350,170)" name="ROM">
+      <a name="addrWidth" val="4"/>
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="contents">addr/data: 4 24
+0 211000 410000 210800 402000 800001
+</a>
+      <a name="dataWidth" val="24"/>
+    </comp>
+    <wire from="(310,180)" to="(350,180)"/>
+    <wire from="(590,230)" to="(660,230)"/>
+  </circuit>
+  <circuit name="MOV_acc_to_reg">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="MOV_acc_to_reg"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(310,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ADDRESS"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(660,230)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="CODED_OUTPUT"/>
+      <a name="output" val="true"/>
+      <a name="width" val="24"/>
+    </comp>
+    <comp lib="4" loc="(350,170)" name="ROM">
+      <a name="addrWidth" val="4"/>
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="contents">addr/data: 4 24
+0 211000 410000 202000 410800 800001
+</a>
+      <a name="dataWidth" val="24"/>
+    </comp>
+    <wire from="(310,180)" to="(350,180)"/>
+    <wire from="(590,230)" to="(660,230)"/>
+  </circuit>
+  <circuit name="INC_DEC">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="INC_DEC"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(310,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ADDRESS"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(660,230)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="CODED_OUTPUT"/>
+      <a name="output" val="true"/>
+      <a name="width" val="24"/>
+    </comp>
+    <comp lib="4" loc="(350,170)" name="ROM">
+      <a name="addrWidth" val="4"/>
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="contents">addr/data: 4 24
+0 211000 410000 210800 400000 0 204000 402000
 800001
+</a>
+      <a name="dataWidth" val="24"/>
+    </comp>
+    <wire from="(310,180)" to="(350,180)"/>
+    <wire from="(590,230)" to="(660,230)"/>
+  </circuit>
+  <circuit name="ADD_reg">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="ADD_reg"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(310,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ADDRESS"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(660,230)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="CODED_OUTPUT"/>
+      <a name="output" val="true"/>
+      <a name="width" val="24"/>
+    </comp>
+    <comp lib="4" loc="(350,170)" name="ROM">
+      <a name="addrWidth" val="4"/>
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="contents">addr/data: 4 24
+0 211000 410000 210800 401000 202000 400000 40000
+204000 402000 800001
 </a>
       <a name="dataWidth" val="24"/>
     </comp>

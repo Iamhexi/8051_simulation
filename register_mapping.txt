@@ -1,0 +1,25 @@
+Registers:
+Address; Register
+0 ALU_Buffer1 (input only)
+1 ALU_Buffer2 (input only)
+2 A
+3 B
+4 ALU_Output (output only)
+5 ALU_OutputAux (output only)
+
+
+6 @R0
+7 @R1
+8 R0
+9 R1
+A R2
+B R3
+C R4
+D R5
+E R6
+F R7
+
+10 Source Register
+11 Opcode lower Nibble (output only)
+12 Instruction Register (output only)
+13 Program Counter

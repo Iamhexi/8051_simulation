@@ -187,7 +187,7 @@
     <comp lib="4" loc="(1320,2730)" name="ROM">
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 8 8
-c9 99 99 5*0 99
+2a 99 99 5*0 99
 </a>
       <a name="label" val="xCode"/>
     </comp>
@@ -1635,12 +1635,13 @@ c9 99 99 5*0 99
 00110011 1110 # rlc
 0000x1xx 0000 # inc
 0001x1xx 0001 # dec
-0010x1xx 0010 # add
+0010xxxx 0010 # add
 0011x1xx 0011 # addc
 0100xx10 0111 # orl
-0101xx1x 1000 # anl
+0101xxxx 1000 # anl
 1001x1xx 0100 # subb
 11011xxx 1010 # compare (djnz)
+0110xxxx 1001 # xrl
 </a>
     </comp>
     <comp lib="1" loc="(750,1080)" name="OR Gate"/>
@@ -1658,6 +1659,8 @@ c9 99 99 5*0 99
 11101xxx 1000 # mov (to ACC to GPR)
 11111xxx 1001 # mov (from ACC to GPR)
 00x01xxx 1010 # inc, dec
+0110xxxx 1010 # xrl
+0101xxxx 0000 # anl
 </a>
     </comp>
     <comp lib="1" loc="(810,980)" name="AND Gate">
